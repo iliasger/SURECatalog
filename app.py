@@ -60,8 +60,8 @@ table1 = dash_table.DataTable(
     selected_rows=[],
 )
 
-app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = 'SURE!'
 
 app.layout = [
     html.H1(children='Software Uncertainties Repository - SURE!', style={'textAlign':'center'}),
