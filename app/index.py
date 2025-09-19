@@ -65,7 +65,6 @@ class MainApplication:
     def __init__(self):
         self.__app = Dash(
             __name__,
-            use_pages=True,
             external_stylesheets=[dbc.themes.BOOTSTRAP]
         )
         self.set_layout()
