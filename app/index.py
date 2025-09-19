@@ -229,14 +229,7 @@ class MainApplication:
 
 
 Application = MainApplication()
-app = Application.app.server
+app = Application.__app.server
 
 if __name__ == "__main__":
-    Application.app.run(port=8080, dev_tools_ui=True, debug=True, host="0.0.0.0")
-
-# from dash import Dash, dash_table, html, Input, Output, callback
-# import pandas as pd
-# import dash_bootstrap_components as dbc
-#
-# if __name__ == '__main__':
-#     app.run(debug=True, host='0.0.0.0')
+    Application.__app.run(port=8080, dev_tools_ui=True, debug=True, host="0.0.0.0")
