@@ -73,7 +73,7 @@ class MainApplication:
         return self.__app
 
     def set_layout(self):
-        self.app.layout= [
+        self.__app.layout= [
             html.H1(children='Software Uncertainties Repository - SURE!', style={'textAlign':'center'}),
             html.Div(
                 dbc.Button("Toggle view", color="secondary", id='toggle-val', n_clicks=0, style={"margin-bottom": "10px"}),
